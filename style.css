@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    background-image: url("image/back03.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.container{
+    background-color: white;
+    max-width: 1000px;
+    border-top: 10px solid rgba(3, 102, 214, 0.3);
+    border-bottom: 10px solid rgba(3, 102, 214, 0.3);
+    height: 100%;
+    min-height: 50vh; /* 나중에 100으로 바꿔 */
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+.container img{
+    height: 80px;
+}
+
+.input-area {
+    position: relative;
+}
+.task-input {
+    transition: padding-top 0.2s ease, margin-top 0.2s ease;
+    width: 80%;
+    border: none;
+    border: 1px solid rgba(3, 102, 214, 0.3);
+}
+.task-input:focus {
+    outline: none;
+    border-bottom: 3px solid rgba(3, 102, 214, 0.3);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    transition: 0.5s;
+    padding-top: 35px;
+}
+  
+.task-input + label > span {
+    font-weight: 300;
+    margin: 0;
+    position: absolute;
+    color: #8f8f8f;
+    font-size: 14px;
+    top: 6px;
+    left: 10px;
+    -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+    transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+  
+.task-input:focus + label > span {
+    top: 0px;
+    color: #333;
+}
+  
+.button-add {
+    border: none;
+    background-color: rgba(3, 102, 214, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+}
+.button-add:hover {
+    background-color: cadetblue;
+}
+.button-add:active {
+    background-color: #f3f4f6;
+    box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15),
+      0px 1px 1px rgba(81, 41, 10, 0.15);
+    transform: translateY(0.125rem);
+}
+  
+.task-list-container {
+    border: 1px solid lightgray;
+    margin-top: 1em;
+    position: relative;
+}
+.tab-type {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+}
+  
+.tab-type div {
+    padding: 1em;
+    cursor: pointer;
+}
+  
+#tab-underline {
+    background-color: rgba(3, 102, 214, 0.3);
+    height: 4px !important;
+    position: absolute;
+    top: 52px;
+    left: 0px;
+    width: 48px;
+    transition: 0.5s;
+    padding: 0px;
+}
+  
+.task {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+.task span {
+    padding: 1em;
+}
+.button-box {
+    display: flex;
+}
+  
+.button-box button {
+    height: 100%;
+    border: none;
+    width: 5em;
+    margin: 0;
+    background-color: white;
+    transition: 0.5s;
+}
+.button-box button :active {
+    position: relative;
+    top: 2px;
+}
+  
+.button-box button:first-child:hover {
+    background-color: greenyellow;
+}
+.button-box button:nth-child(2):hover {
+    background-color: rgb(255, 0, 0, 0.3);
+}
+
+.fa-redo{
+    color: gray;
+}
+
+.fa-check {
+    color: rgb(112, 243, 24);
+}
+  
+.fa-trash-arrow-up{
+    color: red;
+}
+.fa-rotate-right {
+    color: lightslategray;
+}
+
+.button-box .fa-star {
+    color: gold; 
+    cursor: pointer; 
+    transition: color 0.3s ease; 
+}
+  
+.button-box .fas.fa-star {
+    color: orange; 
+}
+  
+.fa-pen-to-square {
+    color: brown;
+}
+
+.fa-calendar-alt {
+    color: royalblue;
+}
+
+.fa-bell{
+    color: deeppink;
+}
+  
+.task-done {
+    text-decoration: line-through;
+    background-color: lightgray;
+    transition: 0.5s;
+}
