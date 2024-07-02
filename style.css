@@ -118,7 +118,7 @@ body{
     background-color: white;
     transition: 0.5s;
 }
-.button-box button :active {
+.button-box button:active {
     position: relative;
     top: 2px;
 }
@@ -127,7 +127,19 @@ body{
     background-color: greenyellow;
 }
 .button-box button:nth-child(2):hover {
-    background-color: rgb(255, 0, 0, 0.3);
+    background-color: rgba(251, 255, 0, 0.3);
+}
+.button-box button:nth-child(3):hover {
+    background-color: rgba(255, 154, 65, 0.3);
+}
+.button-box button:nth-child(4):hover {
+    background-color: rgba(47, 110, 255, 0.3);
+}
+.button-box button:nth-child(5):hover {
+    background-color: rgba(255, 137, 243, 0.3);
+}
+.button-box button:nth-child(6):hover {
+    background-color: rgba(255, 11, 11, 0.3);
 }
 
 .fa-redo{
